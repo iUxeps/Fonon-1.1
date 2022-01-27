@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonon</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css?t=1643266269064" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fonon</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1643184334446">
-</head>
-
-<body> <header class="header mt-7">
+  <body>
+<header class="header mt-7">
   <div class="container mx-auto flex items-center justify-between">
     <div class="logo">
       <a href="#">
-        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+        <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[180px] sm:w-[250px]" src="img/logo.png" alt="" /></picture>
       </a>
     </div>
 
     <nav class="navbar">
+      <button class="burger-close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-x"
+          width="36"
+          height="36"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
       <ul class="nav-list flex justify-center gap-x-[51px] font-normal">
-        <li class="nav-item nav-item-trig relative  flex items-center gap-x-2 cursor-pointer">
-          <a class="nav-link cursor-pointer">Ювелирные украшения</a>
-          <div class="nav-drop bg-white absolute p-4 items-start w-full rounded-lg top-[40px]">
-            <ul class="nav-drop-list ">
+        <li class="nav-item nav-item-trig relative cursor-pointer">
+          <a
+            class="nav-link nav-link-drop cursor-pointer flex gap-x-2 items-center"
+            >Ювелирные украшения</a
+          >
+          <div
+            class="nav-drop bg-white absolute p-4 items-start w-full rounded-lg top-[40px]"
+          >
+            <ul class="nav-drop-list">
               <li class="nav-drop-item">
-                <a class="nav-drop-link" href="">
-                  Кольца
-                </a>
+                <a class="nav-drop-link" href=""> Кольца </a>
               </li>
               <li class="nav-drop-item">
-                <a class="nav-drop-link" href="">
-                  Серьги
-                </a>
+                <a class="nav-drop-link" href=""> Серьги </a>
               </li>
               <li class="nav-drop-item">
-                <a class="nav-drop-link" href="">
-                  Цепочки
-                </a>
+                <a class="nav-drop-link" href=""> Цепочки </a>
               </li>
               <li class="nav-drop-item">
-                <a class="nav-drop-link" href="">
-                  Браслеты
-                </a>
+                <a class="nav-drop-link" href=""> Браслеты </a>
               </li>
             </ul>
           </div>
@@ -63,30 +83,36 @@
         </li>
       </ul>
     </nav>
+    <button class="burger-menu">
+      <picture><source srcset="img/burger.webp" type="image/webp"><img src="img/burger.png" alt="" /></picture>
+    </button>
   </div>
+  <div
+    class="nav-bg fixed z-[99999] top-0 right-0 left-0 bottom-0 w-full h-full"
+  ></div>
 </header>
 
 
-<main class="home mt-[51px]">
+<main class="home mt-[101px]">
     <section class="home">
       <div class="container mx-auto">
-      <div class="swiper container-child pb-[100px]" id="swiper-home">
+      <div class="swiper container-child pb-[60px] sm:pb-[100px]" id="swiper-home">
         <div class="swiper-wrapper">
           <div
             class="swiper-slide swiper-item grid grid-cols-12 gap-x-[73px] items-end"
           >
-            <div class="col-span-8">
-              <div class="flex gap-x-10">
-                <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="max-h-[140px] max-w-[531px]" src="img/swiper-top.png" alt="" /></picture>
-                  <a href="#" class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[120px] h-[120px] flex items-center justify-center rounded-full mt-10">
+            <div class="col-span-9 2xl:col-span-8 swiper-left">
+              <div class="sm:flex gap-x-10">
+                  <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="w-[400px] 2xl:h-[140px] 2xl:w-[531px]" src="img/swiper-top.png" alt="" /></picture>
+                  <a href="#" class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[100px] h-[100px] 2xl:w-[120px] 2xl:h-[120px] flex items-center justify-center rounded-full m-0 sm:mt-10">
                     подробнее
                   </a>
               </div>
-              <div class="swiper-info mt-10">
-                <h2 class="text-[67px] max-w-[550px] leading-[100%]">
+              <div class="swiper-info mt-5 sm:mt-10">
+                <h2 class="text-[38px] lg:text-[67px] max-w-[550px] leading-[100%]">
                   Ludovic Moissanite Ring™
                 </h2>
-                <p class="text-[20px] mt-8">
+                <p class="text-[18px] lg:text-[20px] mt-4 sm:mt-8">
                   It’s Not Diamond. It’s Ludovic Moissanite Stone™ Using
                   innovative, cutting-edge technology we have been able to
                   create Ludovic Moissanite Sparkling Stone™ that cannot be
@@ -95,52 +121,25 @@
                 </p>
               </div>
             </div>
-            <div class="col-span-4">
-              <picture><source srcset="img/swiper.webp" type="image/webp"><img src="img/swiper.png" alt="" /></picture>
-            </div>
-          </div>
-          <div
-            class="swiper-slide swiper-item grid grid-cols-12 gap-x-[73px] items-end"
-          >
-            <div class="col-span-8">
-              <div class="flex gap-x-10">
-                <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="max-h-[140px] max-w-[531px]" src="img/swiper-top.png" alt="" /></picture>
-                  <a href="#" class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[120px] h-[120px] flex items-center justify-center rounded-full mt-10">
-                    подробнее
-                  </a>
-              </div>
-              <div class="swiper-info mt-10">
-                <h2 class="text-[67px] max-w-[550px] leading-[100%]">
-                  Ludovic Moissanite Ring™
-                </h2>
-                <p class="text-[20px] mt-8">
-                  It’s Not Diamond. It’s Ludovic Moissanite Stone™ Using
-                  innovative, cutting-edge technology we have been able to
-                  create Ludovic Moissanite Sparkling Stone™ that cannot be
-                  differentiated from diamonds by naked eyes, and can pass the
-                  diamond test.
-                </p>
-              </div>
-            </div>
-            <div class="col-span-4">
+            <div class="col-span-3 2xl:col-span-4 swiper-right-img">
               <picture><source srcset="img/swiper.webp" type="image/webp"><img src="img/swiper.png" alt="" /></picture>
             </div>
           </div>
           <div
           class="swiper-slide swiper-item grid grid-cols-12 gap-x-[73px] items-end"
         >
-          <div class="col-span-8">
-            <div class="flex gap-x-10">
-              <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="max-h-[140px] max-w-[531px]" src="img/swiper-top.png" alt="" /></picture>
-                <a href="#" class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[120px] h-[120px] flex items-center justify-center rounded-full mt-10">
+          <div class="col-span-9 2xl:col-span-8 swiper-left">
+            <div class="sm:flex gap-x-10">
+                <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="w-[400px] 2xl:h-[140px] 2xl:w-[531px]" src="img/swiper-top.png" alt="" /></picture>
+                <a href="#" class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[100px] h-[100px] 2xl:w-[120px] 2xl:h-[120px] flex items-center justify-center rounded-full m-0 sm:mt-10">
                   подробнее
                 </a>
             </div>
-            <div class="swiper-info mt-10">
-              <h2 class="text-[67px] max-w-[550px] leading-[100%]">
+            <div class="swiper-info mt-5 sm:mt-10">
+              <h2 class="text-[38px] lg:text-[67px] max-w-[550px] leading-[100%]">
                 Ludovic Moissanite Ring™
               </h2>
-              <p class="text-[20px] mt-8">
+              <p class="text-[18px] lg:text-[20px] mt-4 sm:mt-8">
                 It’s Not Diamond. It’s Ludovic Moissanite Stone™ Using
                 innovative, cutting-edge technology we have been able to
                 create Ludovic Moissanite Sparkling Stone™ that cannot be
@@ -149,7 +148,7 @@
               </p>
             </div>
           </div>
-          <div class="col-span-4">
+          <div class="col-span-3 2xl:col-span-4 swiper-right-img">
             <picture><source srcset="img/swiper.webp" type="image/webp"><img src="img/swiper.png" alt="" /></picture>
           </div>
         </div>
@@ -166,7 +165,7 @@
         <div class="swiper" id="swiper-collec">
           <h2 class="title"> Коллекции </h2>
 
-          <div class="swiper-wrapper mt-10">
+          <div class="swiper-wrapper mt-5 sm:mt-10">
             <div class="swiper-slide">
                 <picture><source srcset="img/model.webp" type="image/webp"><img class="rounded-[10px] w-full h-[300px]" src="img/model.png" alt="img"></picture>
                 <div class="mt-5">
@@ -279,7 +278,7 @@
       <div class="container mx-auto">
         <div class="swiper" id="swiper-best">
           <h2 class="title"> Бестселлеры </h2>
-          <div class="swiper-wrapper mt-10">
+          <div class="swiper-wrapper mt-5 sm:mt-10">
             <div class="swiper-slide">
               <a href="#">
                 <picture><source srcset="img/model.webp" type="image/webp"><img class="rounded-[10px] w-full h-[300px]" src="img/model.png" alt="img"></picture>
@@ -356,25 +355,25 @@
 
     <section class="fashion mt-[120px]">
       <div class="container mx-auto">
-        <div class="fashion-wrap grid grid-cols-12 gap-x-14">
-          <div class="fashion-img col-span-5">
-            <picture><source srcset="img/fashion-woman.webp" type="image/webp"><img class="w-full rounded-[10px]" src="img/fashion-woman.png" alt=""></picture>
+        <div class="fashion-wrap block sm:grid grid-cols-12 gap-x-5 lg:gap-x-14">
+          <div class="fashion-img col-span-5 hidden sm:block">
+            <picture><source srcset="img/fashion-woman.webp" type="image/webp"><img class="w-full rounded-[10px] h-full" src="img/fashion-woman.png" alt=""></picture>
           </div>
           <div class="fashion-content col-span-7">
-            <div class="grid grid-cols-12 justify-between gap-x-10">
-              <div class="col-span-8 pr-10">
-                <h2 class="text-[36px] font-bold">УКРАШЕНИЯ В ОБРАЗЕ </h2>
-                <p class="mt-5 text-[31px] font-bold">- Unscratchable, And can live for a lifetime.</p>
+            <div class="sm:grid grid-cols-12 justify-between gap-x-2 lg:gap-x-10">
+              <div class="col-span-8 p-0 lg:pr-10">
+                <h2 class="text-[28px] sm:text-[36px] font-bold">УКРАШЕНИЯ В ОБРАЗЕ </h2>
+                <p class="mt-5 text-[24px] sm:text-[31px] font-bold block sm:hidden lg:block">- Unscratchable, And can live for a lifetime.</p>
               </div>
               <div class="col-span-4">
-                <picture><source srcset="img/fashion-circle.webp" type="image/webp"><img src="img/fashion-circle.png" alt=""></picture>
+                <picture><source srcset="img/fashion-circle.webp" type="image/webp"><img class="w-[120px] sm:w-full" src="img/fashion-circle.png" alt=""></picture>
               </div>
 
             </div>
             <p class="mt-8 text-[20px] max-w-[600px]">Gemstones are measured on the Mohs Scale of Hardness, which assesses a gem’s ability to withstand surface scratching.</p>
 
-            <div class="mt-16">
-              <a href="#" class="px-[100px] py-4 inline-block bg-[#E9A371] hover:bg-[#815536] text-white text-[22px] font-semibold rounded">
+            <div class="mt-8 lg:mt-16">
+              <a href="#" class="px-[50px] sm:px-[100px] py-4 inline-block bg-[#E9A371] hover:bg-[#815536] text-white text-[22px] font-semibold rounded">
                 Подробнее
               </a>
             </div>
@@ -388,9 +387,9 @@
 
     <section class="action mt-[130px]">
       <div class="container mx-auto">
-        <h2 class="title text-center text-[30px] sm:text-[45px] leading-[37px] tracking-[0.5px]">АКЦИИ СЕЗОНА</h2>
+        <h2 class="title">АКЦИИ СЕЗОНА</h2>
 
-        <div class="swiper mt-[47px] swiper-action" id="swiper-action">
+        <div class="swiper mt-5 sm:mt-[47px] swiper-action" id="swiper-action">
           <div class="swiper-wrapper sales-slider_wrapper">
 
             <div class="swiper-slide swiper-item">
@@ -432,7 +431,7 @@
 </main>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1643184334446'></script>
+<script src='js/main.js?t=1643266269064'></script>
 
 </body>
 
