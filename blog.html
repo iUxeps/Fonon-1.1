@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644486407285" />
+  <link rel="stylesheet" href="css/main.css?t=1644495612903" />
 
   <script>
     tailwind.config = {
@@ -16,6 +16,7 @@
         screens: {
           micro: "290px",
           mini: "350px",
+          phone: '500px',
           sm: "641px",
           md: "776px",
           pad: "850px",
@@ -122,7 +123,7 @@
             <a href="s" class="nav-link"> Акции </a>
           </li>
         </ul>
-        <div class="grid gap-y-4 text-lg xl:hidden">
+        <div class="grid gap-y-4 text-lg lg:hidden">
           <div>
             <a href="contact.html" class="flex gap-x-2 items-center">
               <picture>
@@ -150,9 +151,180 @@
   <div class="nav-bg fixed z-[99999] top-0 right-0 left-0 bottom-0 w-full h-full"></div>
 </header>
 
-<main class="">
+<main class="blog-page mt-14">
+  <h2 class="title">Ювелирный журнал</h2>
+  <section class="blog mt-8 mini:mt-12">
+    <div class="container mx-auto">
+      <div class="blog-row space-y-11">
+        <div class="blog-wrap grid grid-cols-12 gap-y-5 sm:gap-x-8">
+          <div class="blog-img col-span-12 sm:col-span-5">
+            <picture>
+              <img class="h-[240px] md:h-[270px] lg:h-[330px] w-full rounded-default" src="img/j.jpg" alt="">
+            </picture>
+          </div>
 
-  
+          <div class="blog-content col-span-12 sm:col-span-7">
+            <h3 class="text-2xl mb-3 font-bold"> Заголовок для статьи</h3>
+            <p class="mb-5">
+              Подбирать аксессуары так же важно, как правильно одеваться. И нужно быть очень внимательным, ведь
+              аксессуары
+              могут как удачно завершить костюм, так и наоборот - испортить Ваш образ.
+              <br>
+              Аксессуарами принято считать ювелирные изделия и бижутерию, сумки, часы, платки, перчатки, зонты и
+              головные
+              уборы. Все эти вещи помогают создавать
+            </p>
+            <a href="#"
+              class="text-white py-2 px-7 bg-beige hover:bg-beige-dark rounded-lg ease-in-out duration-150 font-medium">
+              Подробнее
+            </a>
+          </div>
+
+        </div>
+
+        <div class="blog-wrap grid grid-cols-12 gap-y-5 sm:gap-x-8">
+          <div class="blog-img col-span-12 sm:col-span-5">
+            <picture>
+              <img class="h-[240px] md:h-[270px] lg:h-[330px] w-full rounded-default" src="img/j.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="blog-content col-span-12 sm:col-span-7">
+            <h3 class="text-2xl mb-3 font-bold"> Заголовок для статьи</h3>
+            <p class="mb-5">
+              Подбирать аксессуары так же важно, как правильно одеваться. И нужно быть очень внимательным, ведь
+              аксессуары
+              могут как удачно завершить костюм, так и наоборот - испортить Ваш образ.
+              <br>
+              Аксессуарами принято считать ювелирные изделия и бижутерию, сумки, часы, платки, перчатки, зонты и
+              головные
+              уборы. Все эти вещи помогают создавать
+            </p>
+            <a href="#"
+              class="text-white py-2 px-7 bg-beige hover:bg-beige-dark rounded-lg ease-in-out duration-150 font-medium">
+              Подробнее
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper mt-6 mini:my-10 swiper-action" id="swiper-action">
+        <div class="swiper-wrapper sales-slider_wrapper pb-12">
+
+          <div class="swiper-slide swiper-item">
+            <a href="#">
+              <picture>
+                <img class="w-full h-[300px] md:h-[400px] rounded-default" src="img/model-1.png" alt="">
+              </picture>
+              <div class="item-info px-3 sm:p-0">
+                <p class="opacity-60">
+                  02.12.2021
+                </p>
+                <h3 class="text-xl md:text-2xl lg:text-3xl mt-4 sm:mt-6">
+                  Как измерить размер кольца в домашних условиях
+                </h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide swiper-item">
+            <a href="#">
+              <picture>
+                <img class="w-full h-[300px] md:h-[400px] rounded-default" src="img/model-1.png" alt="">
+              </picture>
+              <div class="item-info px-3 sm:p-0">
+                <p class="opacity-60">
+                  02.12.2021
+                </p>
+                <h3 class="text-xl md:text-2xl lg:text-3xl mt-4 sm:mt-6">
+                  Как измерить размер кольца в домашних условиях
+                </h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide swiper-item">
+            <a href="#">
+              <picture>
+                <img class="w-full h-[300px] md:h-[400px] rounded-default" src="img/model-1.png" alt="">
+              </picture>
+              <div class="item-info px-3 sm:p-0">
+                <p class="opacity-60">
+                  02.12.2021
+                </p>
+                <h3 class="text-xl md:text-2xl lg:text-3xl mt-4 sm:mt-6">
+                  Как измерить размер кольца в домашних условиях
+                </h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+      <div class="blog-row space-y-11">
+        <div class="blog-wrap grid grid-cols-12 gap-y-5 sm:gap-x-8">
+          <div class="blog-img col-span-12 sm:col-span-5">
+            <picture>
+              <img class="h-[240px] md:h-[270px] lg:h-[330px] w-full rounded-default" src="img/j.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="blog-content col-span-12 sm:col-span-7">
+            <h3 class="text-2xl mb-3 font-bold"> Заголовок для статьи</h3>
+            <p class="mb-5">
+              Подбирать аксессуары так же важно, как правильно одеваться. И нужно быть очень внимательным, ведь
+              аксессуары
+              могут как удачно завершить костюм, так и наоборот - испортить Ваш образ.
+              <br>
+              Аксессуарами принято считать ювелирные изделия и бижутерию, сумки, часы, платки, перчатки, зонты и
+              головные
+              уборы. Все эти вещи помогают создавать
+            </p>
+            <a href="#"
+              class="text-white py-2 px-7 bg-beige hover:bg-beige-dark rounded-lg ease-in-out duration-150 font-medium">
+              Подробнее
+            </a>
+          </div>
+
+        </div>
+
+        <div class="blog-wrap grid grid-cols-12 gap-y-5 sm:gap-x-8">
+          <div class="blog-img col-span-12 sm:col-span-5">
+            <picture>
+              <img class="h-[240px] md:h-[270px] lg:h-[330px] w-full rounded-default" src="img/j.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="blog-content col-span-12 sm:col-span-7">
+            <h3 class="text-2xl mb-3 font-bold"> Заголовок для статьи</h3>
+            <p class="mb-5">
+              Подбирать аксессуары так же важно, как правильно одеваться. И нужно быть очень внимательным, ведь
+              аксессуары
+              могут как удачно завершить костюм, так и наоборот - испортить Ваш образ.
+              <br>
+              Аксессуарами принято считать ювелирные изделия и бижутерию, сумки, часы, платки, перчатки, зонты и
+              головные
+              уборы. Все эти вещи помогают создавать
+            </p>
+            <a href="#"
+              class="text-white py-2 px-7 bg-beige hover:bg-beige-dark rounded-lg ease-in-out duration-150 font-medium">
+              Подробнее
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer mt-[60px] sm:mt-[100px] pt-14 bg-[#F7E9DF]">
@@ -274,7 +446,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644486407285'></script>
+<script src='js/main.js?t=1644495612903'></script>
 
 </body>
 
