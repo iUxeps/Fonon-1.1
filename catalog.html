@@ -7,8 +7,10 @@
   <title>Fonon</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644556885218" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?t=1644750533089" />
 
   <script>
     tailwind.config = {
@@ -27,7 +29,7 @@
         borderRadius: {
           'none': '0',
           'lg': '8px',
-          'xl': '12px',
+          'xl': '16px',
           'default': '20px',
           'button': '60px',
           'full': '50%',
@@ -54,9 +56,9 @@
 </div>
 <header class="header mt-7">
   <div class="container mx-auto">
-    <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start gap-x-4 sm:gap-x-9 text-lg">
+    <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
       <div>
-        <a href="contact.html" class="flex gap-x-2 items-center">
+        <a href="contact.html" class="flex space-x-2 items-center">
           <picture>
             <img class="w-6 h-6" src="img/locat.png" alt="" />
           </picture>
@@ -64,7 +66,7 @@
         </a>
       </div>
       <div>
-        <a href="tel:+998999999999" class="flex gap-x-2 items-center">
+        <a href="tel:+998999999999" class="flex space-x-2 items-center">
           <picture>
             <img class="w-6 h-6" src="img/phone.png" alt="" />
           </picture>
@@ -90,9 +92,10 @@
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
-        <ul class="nav-list flex justify-center gap-x-[51px] font-normal text-lg mb-6">
+
+        <ul class="nav-list flex justify-center lg:space-x-[51px] font-normal text-lg mb-6">
           <li class="nav-item nav-item-trig relative cursor-pointer">
-            <a class="nav-link nav-link-drop cursor-pointer flex gap-x-2 items-center">Ювелирные украшения</a>
+            <div class="nav-link nav-link-drop cursor-pointer flex items-center after:ml-2">Ювелирные украшения</div>
             <div class="nav-drop bg-white absolute p-4 items-start w-full rounded-lg top-[40px]">
               <ul class="nav-drop-list">
                 <li class="nav-drop-item">
@@ -123,9 +126,10 @@
             <a href="s" class="nav-link"> Акции </a>
           </li>
         </ul>
+
         <div class="grid gap-y-4 text-lg lg:hidden">
           <div>
-            <a href="contact.html" class="flex gap-x-2 items-center">
+            <a href="contact.html" class="flex space-x-2 items-center">
               <picture>
                 <img class="w-6 h-6" src="img/locat.png" alt="" />
               </picture>
@@ -133,7 +137,7 @@
             </a>
           </div>
           <div>
-            <a href="tel:+998999999999" class="flex gap-x-2 items-center">
+            <a href="tel:+998999999999" class="flex space-x-2 items-center">
               <picture>
                 <img class="w-6 h-6" src="img/phone.png" alt="" />
               </picture>
@@ -151,13 +155,572 @@
   <div class="nav-bg fixed z-[99999] top-0 right-0 left-0 bottom-0 w-full h-full"></div>
 </header>
 
-<main class="catalog-page">
+<main class="catalog-page mt-6 sm:mt-10">
   <div class="container mx-auto">
     <picture>
-      <img class="w-full h-[380px] rounded-default" src="img/q.jpg" alt="">
+      <img class="w-full h-[200px] mini:h-[380px] rounded-default" src="img/q.jpg" alt="">
     </picture>
   </div>
-  
+
+  <section class="catalog mt-11">
+    <div class="container mx-auto">
+      <div class="pad:flex justify-between  pad:space-x-8  xl:space-x-12">
+        <aside class="filter-side h-fit w-12/12 w-full z-50 pad:w-4/12 xl:w-3/12 bg-beige-light px-6 py-7 pad:rounded-lg relative">
+
+            <h3
+              class="font-medium text-lg relative after:content-[''] after:border-t after:border-[#666666] after:block after:w-full after:mt-4">
+              ФИЛЬТР
+            </h3>
+
+            <button class="pad:hidden block filter-close absolute top-5 right-5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x hover:stroke-beige-dark" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+
+          <form action="">
+
+            <div class="filter-row mt-3 grid gap-y-3">
+              <div class="filter-wrap">
+                <button type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3">
+                  Тип
+                </button>
+                <div class="filter-content pl-6">
+                  <div class="filter-item text-[#666666] text-3 mt-3 font-normal block">
+                    <input class="checkbox-box" type="checkbox" id="playstation-1" />
+                    <label class="filter-item_name cursor-pointer" for="playstation-1">Кольца</label>
+                    <span class="prod-count">(492)</span>
+                  </div>
+                  <div class="filter-item text-[#666666] text-3 mt-3 font-normal block">
+                    <input class="checkbox-box" type="checkbox" id="playstation-2" />
+                    <label class="filter-item_name cursor-pointer" for="playstation-2">Браслеты</label>
+                    <span class="prod-count">(250)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-wrap">
+                <button type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3">
+                  Материал
+                </button>
+                <div class="filter-content pl-6">
+                  <div class="filter-item text-[#666666] text-3 mt-3 font-normal block">
+                    <input class="checkbox-box" type="checkbox" id="playstation-1" />
+                    <label class="filter-item_name cursor-pointer" for="playstation-1">Кольца</label>
+                    <span class="prod-count">(492)</span>
+                  </div>
+                  <div class="filter-item text-[#666666] text-3 mt-3 font-normal block">
+                    <input class="checkbox-box" type="checkbox" id="playstation-2" />
+                    <label class="filter-item_name cursor-pointer" for="playstation-2">Браслеты</label>
+                    <span class="prod-count">(250)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Вес
+                </button>
+
+
+                <div class="filter-content pl-6">
+                  <div
+                    class="filter-item text-[#666666] text-3 mt-3 font-normal block">
+                    <input
+                      class="checkbox-box"
+                      type="checkbox"
+                      id="laptop-1"
+                    />
+                    <label class="filter-item_name cursor-pointer" for="laptop-1"
+                    >laptop</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Цвет
+                </button>
+
+                <div class="filter-content pl-6">
+                  <div
+                    class="filter-item text-[#6B767C] text-3 mt-3 font-normal block">
+                    <input
+                      class="checkbox-box"
+                      type="checkbox"
+                      id="Red-1"
+                    />
+                    <label class="filter-item_name cursor-pointer" for="Red-1"
+                    >Red</label
+                    >
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Вставки
+                </button>
+                <div class="filter-content pl-6" >
+                  <div
+                    class="filter-item text-[#6B767C] text-3 mt-3 font-normal block">
+                    <input
+                      class="checkbox-box"
+                      type="checkbox"
+                      id="aaa-1"
+                    />
+                    <label class="filter-item_name cursor-pointer" for="aaa-1"
+                    >aaa</label
+                    >
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Длина
+                </button>
+
+                <div class="filter-content pl-6 mt-2" >
+                  <div class="grid grid-cols-4 gap-x-2 gap-y-2">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-1"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-1"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Размер
+                </button>
+                <div class="filter-content pl-6 mt-2" >
+                  <div class="grid grid-cols-4 gap-x-2 gap-y-2">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-2"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-2"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-2"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-2"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-2"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-2"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-2"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-2"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-2"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-2"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="fil-size-2"
+                        value=""
+                        class="absolute -left-[9999px]"
+                      >
+                      <label
+                        for="fil-size-2"
+                        class="block px-3 py-1 text-center border-[0.5px] rounded-[2px] border-solid border-gray-300 filter-size cursor-pointer"
+                      >
+                        21
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Плетение
+                </button>
+                <div class="filter-content pl-6" >
+                  <div
+                    class="filter-item text-[#6B767C] text-3 mt-3 font-normal block">
+                    <input
+                      class="checkbox-box"
+                      type="checkbox"
+                      id="plet-1"
+                    />
+                    <label class="filter-item_name cursor-pointer" for="plet-1"
+                    >плет</label
+                    >
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Кратность камней
+                </button>
+
+                <div class="filter-content pl-6" >
+                  <div
+                    class="filter-item text-[#6B767C] text-3 mt-3 font-normal block">
+                    <input
+                      class="checkbox-box"
+                      type="checkbox"
+                      id="awda-1"
+                    />
+                    <label class="filter-item_name cursor-pointer" for="awda-1"
+                    >awda</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-wrap">
+                <button
+                  type="button"
+                  class="accordion font-medium text-left text-lg font-medium px-3 py-1 rounded-[5px] block w-full flex items-center before:mr-3"
+                >
+                  Количество изделий
+                </button>
+
+                <div class="filter-content pl-6" >
+                  <div
+                    class="filter-item text-[#6B767C] text-3 mt-3 font-normal block">
+                    <input
+                      class="checkbox-box"
+                      type="checkbox"
+                      id="dd-1"
+                    />
+                    <label class="filter-item_name cursor-pointer" for="dd-1"
+                    >ДД</label
+                    >
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="filter-btns mt-6">
+              <button type="submit" class="block flex justify-center w-full phone:w-[250px] pad:w-full bg-black py-3 text-[16px] text-white rounded-[5px] mb-4"
+                data-role="filters-submit">
+                Применить
+              </button>
+              <button type="reset"
+                class="block flex justify-center w-full phone:w-[250px] pad:w-full bg-white py-3 text-[16px] text-black rounded-[5px] border-[1px] border-solid hover:text-white hover:bg-black duration-300	ease-in-out	"
+                data-role="filters-reset ">
+                Сбросить
+              </button>
+            </div>
+          </form>
+
+        </aside>
+
+        <div class="products w-12/12 pad:w-8/12 xl:w-9/12">
+          <div class="font-medium text-lg mb-2">Каталог</div>
+          <div class="font-bold text-2xl">Ювелирные украшения</div>
+
+          <div class="flex justify-between flex-wrap gap-y-4 items-end mt-4">
+
+            <form action="" class="order-2 phone:order-1">
+              <div class="selector relative">
+                <div id="selectField"
+                  class="flex justify-between text-sm mini:text-base space-x-3 mini:space-x-5 items-center cursor-pointer bg-white px-3 mini:px-4 py-3 rounded-lg border-[#E5E5E5] border">
+                  <div class="flex items-center space-x-1 mini:space-x-2">
+                    <p>Сортировать по :</p>
+                    <p id="selectText" class="text-beige-dark font-medium">По умолчанию</p>
+                  </div>
+                  <picture>
+                    <img class="w-3 duration-150 ease-linear" src="img/arrow-down.png" alt="arrow-down" id="arrow-icon">
+                  </picture>
+                </div>
+                <ul id="select-list" class="hide bg-white rounded-lg overflow-hidden mt-2 absolute w-full">
+                  <li class="options px-4 py-3 cursor-pointer hover:bg-beige ">
+                    Новинки
+                  </li>
+                  <li class="options px-4 py-3 cursor-pointer hover:bg-beige ">
+                    Популярные
+                  </li>
+                  <li class="options px-4 py-3 cursor-pointer hover:bg-beige ">
+                    Старые
+                  </li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="text-[#666666] font-medium order-1 phone:order-2">
+              Найдено
+              <span>
+                15300
+              </span>
+              украшений
+            </div>
+          </div>
+
+          <div class="flex justify-end">
+            <button class="filter-open block pad:hidden mt-5 mr-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal hover:stroke-beige-dark" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="14" cy="6" r="2" />
+                <line x1="4" y1="6" x2="12" y2="6" />
+                <line x1="16" y1="6" x2="20" y2="6" />
+                <circle cx="8" cy="12" r="2" />
+                <line x1="4" y1="12" x2="6" y2="12" />
+                <line x1="10" y1="12" x2="20" y2="12" />
+                <circle cx="17" cy="18" r="2" />
+                <line x1="4" y1="18" x2="15" y2="18" />
+                <line x1="19" y1="18" x2="20" y2="18" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="products-row grid grid-cols-1 phone:grid-cols-2 lg:grid-cols-3 gap-x-4 lg:gap-x-8 gap-y-9 mt-4 pad:mt-7 ">
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item hover:scale-105 ease-in duration-300">
+              <a href="product.html">
+                <div>
+                  <picture>
+                    <img class="h-[284px] w-full rounded-xl" src="img/j.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="mt-3 px-1">
+                  <h3 class="font-bold text-lg">Колье с бриллиантами из белого золота</h3>
+                  <p class="font-light text-base">Золото Au 585, Без вставок, 2.38</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="product-pagination mt-[100px] flex items-center space-x-2">
+              <a href="#" class="prev-btn not-page">
+                <picture>
+                  <img src="img/arrow.png" alt="">
+                </picture>
+              </a>
+              <div class="flex items-center flex-wrap">
+                <a class="pag-btn current-btn" href="#">
+                  1
+                </a>
+                <a class="pag-btn" href="#">
+                  2
+                </a>
+                <a class="pag-btn" href="">
+                  3
+                </a>
+                <a class="w-[46px] h-[46px] flex items-center justify-center" href="">
+                  ...
+                </a>
+                <a class="pag-btn" href="">
+                  22
+                </a>
+              </div>
+              <a href="#" class="next-btn">
+                <picture>
+                  <img class="rotate-180" src="img/arrow.png" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer mt-[60px] sm:mt-[100px] pt-14 bg-[#F7E9DF]">
@@ -171,7 +734,7 @@
         </a>
       </div>
 
-      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-6 md:gap-x-14 flex-wrap lg:gap-x-[100px] lg:flex-nowrap">
+      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-8 mini:space-x-4 md:space-x-14 flex-wrap lg:space-x-[100px] lg:flex-nowrap">
         <div class="">
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">МИР FONON</h4>
           <ul class="grid gap-y-2 text-lg">
@@ -232,7 +795,7 @@
 
         <div>
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">Соц. сети</h4>
-          <ul class="flex gap-x-4 items-center">
+          <ul class="flex space-x-4 items-center">
 
             <li>
               <a href="" class="hover:scale-150 ease-in-out duration-150 block">
@@ -269,7 +832,7 @@
       <hr class="border border-[#979797]">
       <div class="text-center py-8">
         © 2021 Все права защищены. Сделано в
-        <a class="underline underline-offset-4 hover:text-beige-dark" href="digitalpanda.uz">
+        <a href="https://digitalpanda.uz" class="underline underline-offset-4 hover:text-beige-dark">
           Digital Panda
         </a>
         2021
@@ -279,7 +842,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644556885218'></script>
+<script src='js/main.js?t=1644750533089'></script>
 
 </body>
 

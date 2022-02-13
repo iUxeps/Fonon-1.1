@@ -7,8 +7,10 @@
   <title>Fonon</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644556885236" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?t=1644750533123" />
 
   <script>
     tailwind.config = {
@@ -27,7 +29,7 @@
         borderRadius: {
           'none': '0',
           'lg': '8px',
-          'xl': '12px',
+          'xl': '16px',
           'default': '20px',
           'button': '60px',
           'full': '50%',
@@ -54,9 +56,9 @@
 </div>
 <header class="header mt-7">
   <div class="container mx-auto">
-    <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start gap-x-4 sm:gap-x-9 text-lg">
+    <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
       <div>
-        <a href="contact.html" class="flex gap-x-2 items-center">
+        <a href="contact.html" class="flex space-x-2 items-center">
           <picture>
             <img class="w-6 h-6" src="img/locat.png" alt="" />
           </picture>
@@ -64,7 +66,7 @@
         </a>
       </div>
       <div>
-        <a href="tel:+998999999999" class="flex gap-x-2 items-center">
+        <a href="tel:+998999999999" class="flex space-x-2 items-center">
           <picture>
             <img class="w-6 h-6" src="img/phone.png" alt="" />
           </picture>
@@ -90,9 +92,10 @@
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
-        <ul class="nav-list flex justify-center gap-x-[51px] font-normal text-lg mb-6">
+
+        <ul class="nav-list flex justify-center lg:space-x-[51px] font-normal text-lg mb-6">
           <li class="nav-item nav-item-trig relative cursor-pointer">
-            <a class="nav-link nav-link-drop cursor-pointer flex gap-x-2 items-center">Ювелирные украшения</a>
+            <div class="nav-link nav-link-drop cursor-pointer flex items-center after:ml-2">Ювелирные украшения</div>
             <div class="nav-drop bg-white absolute p-4 items-start w-full rounded-lg top-[40px]">
               <ul class="nav-drop-list">
                 <li class="nav-drop-item">
@@ -123,9 +126,10 @@
             <a href="s" class="nav-link"> Акции </a>
           </li>
         </ul>
+
         <div class="grid gap-y-4 text-lg lg:hidden">
           <div>
-            <a href="contact.html" class="flex gap-x-2 items-center">
+            <a href="contact.html" class="flex space-x-2 items-center">
               <picture>
                 <img class="w-6 h-6" src="img/locat.png" alt="" />
               </picture>
@@ -133,7 +137,7 @@
             </a>
           </div>
           <div>
-            <a href="tel:+998999999999" class="flex gap-x-2 items-center">
+            <a href="tel:+998999999999" class="flex space-x-2 items-center">
               <picture>
                 <img class="w-6 h-6" src="img/phone.png" alt="" />
               </picture>
@@ -154,13 +158,13 @@
 <main class="product-page">
   <section class="product">
     <div class="container mx-auto">
-      <div class="relative grid grid-cols-12 gap-y-5 pad:gap-x-4 laptop:gap-x-7 mt-10">
+      <div class="relative grid grid-cols-12 gap-y-5 pad:space-x-4 laptop:space-x-7 mt-10">
 
         <div class="product-left w-full col-span-12 pad:col-span-6">
 
           <div class="prod-left_slider flex items-start flex-wrap laptop:flex-nowrap gap-y-5 gap-x-4 w-full ">
 
-            <div thumbsSlider="" class="swiper w-12/12 laptop:laptop:w-2/12" id="swiper-dots">
+            <div thumbsSlider="" class="swiper w-12/12 laptop:w-2/12 " id="swiper-dots">
               <div class="swiper-wrapper">
                 <div class="swiper-slide h-[50px] mini:h-[70px] phone:h-[100px] w-[50px] mini:w-[70px] phone:w-[100px] cursor-pointer rounded-lg overflow-hidden	">
                   <picture><source srcset="img/r.webp" type="image/webp"><img class="h-[50px] mini:h-[70px] phone:h-[100px] w-[50px] mini:w-[70px] phone:w-[100px]" src="img/r.jpg" alt=""></picture>
@@ -177,7 +181,7 @@
               </div>
             </div>
 
-            <div class="swiper w-12/12 laptop:laptop:w-10/12" id="swiper-main">
+            <div class="swiper w-12/12 laptop:w-10/12" id="swiper-main">
               <div class="swiper-wrapper">
                 <div class="swiper-slide ">
                   <picture><source srcset="img/r.webp" type="image/webp"><img class="rounded-lg object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/r.jpg" alt=""></picture>
@@ -203,7 +207,7 @@
 
           <div class="product-tabs mt-10">
 
-            <div class="tabs-nav flex gap-x-3 mini:gap-x-5 text-sm micro:text-base phone:text-lg">
+            <div class="tabs-nav flex space-x-1 micro:space-x-3 mini:space-x-5 text-sm micro:text-base phone:text-lg">
               <button class="tabs-nav__btn active px-2 phone:px-4 py-2" type="button" data-tab="#tab-1">
                 ХАРАКТЕРИСТИКИ
               </button>
@@ -376,7 +380,7 @@
           </div>
         </div>
 
-        <div class="sales_arrows swiper-btns flex items-center justify-center gap-x-[44px] mt-[44px]">
+        <div class="sales_arrows swiper-btns flex items-center justify-center space-x-[44px] mt-[44px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -485,7 +489,7 @@
             </a>
           </div>
         </div>
-        <div class="sales_arrows swiper-btns flex items-center justify-center gap-x-[44px] mt-[44px]">
+        <div class="sales_arrows swiper-btns flex items-center justify-center space-x-[44px] mt-[44px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -729,7 +733,7 @@
         </a>
       </div>
 
-      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-6 md:gap-x-14 flex-wrap lg:gap-x-[100px] lg:flex-nowrap">
+      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-8 mini:space-x-4 md:space-x-14 flex-wrap lg:space-x-[100px] lg:flex-nowrap">
         <div class="">
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">МИР FONON</h4>
           <ul class="grid gap-y-2 text-lg">
@@ -790,7 +794,7 @@
 
         <div>
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">Соц. сети</h4>
-          <ul class="flex gap-x-4 items-center">
+          <ul class="flex space-x-4 items-center">
 
             <li>
               <a href="" class="hover:scale-150 ease-in-out duration-150 block">
@@ -827,7 +831,7 @@
       <hr class="border border-[#979797]">
       <div class="text-center py-8">
         © 2021 Все права защищены. Сделано в
-        <a class="underline underline-offset-4 hover:text-beige-dark" href="digitalpanda.uz">
+        <a href="https://digitalpanda.uz" class="underline underline-offset-4 hover:text-beige-dark">
           Digital Panda
         </a>
         2021
@@ -837,7 +841,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644556885236'></script>
+<script src='js/main.js?t=1644750533123'></script>
 
 </body>
 

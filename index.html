@@ -7,8 +7,10 @@
   <title>Fonon</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644556885233" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?t=1644750533099" />
 
   <script>
     tailwind.config = {
@@ -27,7 +29,7 @@
         borderRadius: {
           'none': '0',
           'lg': '8px',
-          'xl': '12px',
+          'xl': '16px',
           'default': '20px',
           'button': '60px',
           'full': '50%',
@@ -54,9 +56,9 @@
 </div>
 <header class="header mt-7">
   <div class="container mx-auto">
-    <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start gap-x-4 sm:gap-x-9 text-lg">
+    <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
       <div>
-        <a href="contact.html" class="flex gap-x-2 items-center">
+        <a href="contact.html" class="flex space-x-2 items-center">
           <picture>
             <img class="w-6 h-6" src="img/locat.png" alt="" />
           </picture>
@@ -64,7 +66,7 @@
         </a>
       </div>
       <div>
-        <a href="tel:+998999999999" class="flex gap-x-2 items-center">
+        <a href="tel:+998999999999" class="flex space-x-2 items-center">
           <picture>
             <img class="w-6 h-6" src="img/phone.png" alt="" />
           </picture>
@@ -90,9 +92,10 @@
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
-        <ul class="nav-list flex justify-center gap-x-[51px] font-normal text-lg mb-6">
+
+        <ul class="nav-list flex justify-center lg:space-x-[51px] font-normal text-lg mb-6">
           <li class="nav-item nav-item-trig relative cursor-pointer">
-            <a class="nav-link nav-link-drop cursor-pointer flex gap-x-2 items-center">Ювелирные украшения</a>
+            <div class="nav-link nav-link-drop cursor-pointer flex items-center after:ml-2">Ювелирные украшения</div>
             <div class="nav-drop bg-white absolute p-4 items-start w-full rounded-lg top-[40px]">
               <ul class="nav-drop-list">
                 <li class="nav-drop-item">
@@ -123,9 +126,10 @@
             <a href="s" class="nav-link"> Акции </a>
           </li>
         </ul>
+
         <div class="grid gap-y-4 text-lg lg:hidden">
           <div>
-            <a href="contact.html" class="flex gap-x-2 items-center">
+            <a href="contact.html" class="flex space-x-2 items-center">
               <picture>
                 <img class="w-6 h-6" src="img/locat.png" alt="" />
               </picture>
@@ -133,7 +137,7 @@
             </a>
           </div>
           <div>
-            <a href="tel:+998999999999" class="flex gap-x-2 items-center">
+            <a href="tel:+998999999999" class="flex space-x-2 items-center">
               <picture>
                 <img class="w-6 h-6" src="img/phone.png" alt="" />
               </picture>
@@ -156,9 +160,9 @@
     <div class="container mx-auto">
       <div class="swiper container-child pb-[60px] sm:pb-[100px]" id="swiper-home">
         <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-item grid grid-cols-12 gap-x-[73px] items-end">
+          <div class="swiper-slide swiper-item grid grid-cols-12 space-x-[73px] items-end">
             <div class="col-span-9 2xl:col-span-8 swiper-left">
-              <div class="sm:flex gap-x-10">
+              <div class="sm:flex space-x-10">
                 <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="w-[400px] 2xl:h-[140px] 2xl:w-[531px]" src="img/swiper-top.png" alt="" /></picture>
                 <a href="#"
                   class="hover:bg-white underline underline-offset-4 rounded-full	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[100px] h-[100px] 2xl:w-[120px] 2xl:h-[120px] flex items-center justify-center m-0 sm:mt-10">
@@ -181,9 +185,9 @@
               <picture><source srcset="img/swiper.webp" type="image/webp"><img src="img/swiper.png" alt="" /></picture>
             </div>
           </div>
-          <div class="swiper-slide swiper-item grid grid-cols-12 gap-x-[73px] items-end">
+          <div class="swiper-slide swiper-item grid grid-cols-12 space-x-[73px] items-end">
             <div class="col-span-9 2xl:col-span-8 swiper-left">
-              <div class="sm:flex gap-x-10">
+              <div class="sm:flex space-x-10">
                 <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="w-[400px] 2xl:h-[140px] 2xl:w-[531px]" src="img/swiper-top.png" alt="" /></picture>
                 <a href="#"
                   class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[100px] h-[100px] 2xl:w-[120px] 2xl:h-[120px] flex items-center justify-center rounded-full m-0 sm:mt-10">
@@ -205,9 +209,9 @@
               <picture><source srcset="img/swiper.webp" type="image/webp"><img src="img/swiper.png" alt="" /></picture>
             </div>
           </div>
-          <div class="swiper-slide swiper-item grid grid-cols-12 gap-x-[73px] items-end">
+          <div class="swiper-slide swiper-item grid grid-cols-12 space-x-[73px] items-end">
             <div class="col-span-9 2xl:col-span-8 swiper-left">
-              <div class="sm:flex gap-x-10">
+              <div class="sm:flex space-x-10">
                 <picture><source srcset="img/swiper-top.webp" type="image/webp"><img class="w-[400px] 2xl:h-[140px] 2xl:w-[531px]" src="img/swiper-top.png" alt="" /></picture>
                 <a href="#"
                   class="hover:bg-white underline underline-offset-4	text-[#3D3D3F] border border-1 border-[#3D3D3F] w-[100px] h-[100px] 2xl:w-[120px] 2xl:h-[120px] flex items-center justify-center rounded-full m-0 sm:mt-10">
@@ -228,7 +232,7 @@
             </div>
           </div>
         </div>
-        <div class="home-swiper-btn flex gap-x-[99px]">
+        <div class="home-swiper-btn flex space-x-[99px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -348,7 +352,7 @@
           </div>
         </div>
 
-        <div class="sales_arrows swiper-btns flex items-center justify-center gap-x-[44px] mt-[44px]">
+        <div class="sales_arrows swiper-btns flex items-center justify-center space-x-[44px] mt-[44px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -455,7 +459,7 @@
             </a>
           </div>
         </div>
-        <div class="sales_arrows swiper-btns flex items-center justify-center gap-x-[44px] mt-[44px]">
+        <div class="sales_arrows swiper-btns flex items-center justify-center space-x-[44px] mt-[44px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -465,15 +469,15 @@
 
   <section class="fashion mt-[60px] sm:mt-[120px]">
     <div class="container mx-auto">
-      <div class="fashion-wrap block sm:grid grid-cols-12 gap-x-5 lg:gap-x-14">
+      <div class="fashion-wrap block sm:grid grid-cols-12 space-x-5 lg:space-x-14">
         <div class="fashion-img col-span-6 md:col-span-5 hidden sm:block">
           <picture><source srcset="img/q.webp" type="image/webp"><img class="w-full rounded-default h-full" src="img/q.jpg" alt=""></picture>
         </div>
         <div class="fashion-content col-span-6 md:col-span-7">
-          <div class="lg:grid grid-cols-12 justify-between gap-x-2 lg:gap-x-10">
+          <div class="lg:grid grid-cols-12 justify-between space-x-2 lg:space-x-10">
             <div class=" md:col-span-8 p-0 lg:pr-10">
               <h2 class="text-2xl mini:text-[36px] leading-normal font-bold">УКРАШЕНИЯ В ОБРАЗЕ </h2>
-              <p class="mt-5 text-lg lg:text-[31px] leading-normal font-bold before:content-['-']">
+              <p class="mt-5 text-2xl lg:text-[31px] leading-normal font-bold before:content-['-']">
                 Совершенство в каждой грани. </p>
             </div>
             <div class="col-span-4 my-5 lg:m-0">
@@ -522,8 +526,26 @@
               </div>
             </a>
           </div>
+
+          <div class="swiper-slide swiper-item">
+            <a href="#">
+              <div class="swiper-img ">
+                <picture><source srcset="img/action1.webp" type="image/webp"><img class="rounded-xl" src="img/action1.png" alt="img"></picture>
+              </div>
+              <div class="swiper-info relative">
+                <div
+                  class="swiper-title text-[20px] leading-normal lg:text-[26px] lg:leading-[42px] mt-[20px] font-bold">
+                  -25% процентов на итальянское золото
+                </div>
+                <div class="swiper-text text-[16px] lg:text-[18px] font-light mt-[4px] p-0 lg:pr-[100px] xl:pr-[200px]">
+                  ликвидация итальянской коллекции 2021 года
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
-        <div class="sales_arrows swiper-btns flex items-center justify-center gap-x-[44px] mt-[44px]">
+        <div class="sales_arrows swiper-btns flex items-center justify-center space-x-[44px] mt-[44px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -536,7 +558,7 @@
     <div class="container mx-auto">
       <h2 class="title">Ювелирный журнал</h2>
 
-      <div class="journal-wrap grid grid-cols-1 sm:grid-cols-2 gap-y-5 sm:gap-x-4 md:gap-x-8 lg:gap-x-12 mt-5 sm:mt-12">
+      <div class="journal-wrap grid grid-cols-1 sm:grid-cols-2 gap-y-5 sm:space-x-4 md:space-x-8 lg:space-x-12 mt-5 sm:mt-12">
 
         <div class="journal-item flex justify-center sm:block">
           <a href="#">
@@ -634,7 +656,7 @@
             </a>
           </div>
         </div>
-        <div class="sales_arrows swiper-btns flex items-center justify-center gap-x-[44px] mt-[44px]">
+        <div class="sales_arrows swiper-btns flex items-center justify-center space-x-[44px] mt-[44px]">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -648,26 +670,28 @@
 
       <div class="main-tabs xl:grid grid-cols-12 gap-x-14 mt-6 mini:mt-10 sm:mt-16 xl:mt-[80px]">
 
-        <div class="tabs-nav col-span-4 text-xl micro:text-2xl sm:text-[28px] space-y-6 sm:pr-14">
-          <button class="tabs-nav__btn active flex gap-x-2 mini:gap-x-6 text-left font-[300]" type="button"
-            data-tab="#tab-1">
-            <span class="italic flex gap-x-2 after:content-['/']">
-              1
-            </span>
-            <span>
-              Чистка золота в наших магазинах
-            </span>
-          </button>
-          <button class="tabs-nav__btn flex gap-x-2 mini:gap-x-6 text-left font-[300]" type="button" data-tab="#tab-2">
-            <span class="italic flex gap-x-2 after:content-['/']">
-              2
-            </span>
-            Обмен старых изделий на новые
-          </button>
+        <div class="tabs-nav col-span-4 text-xl micro:text-2xl sm:text-[28px] sm:pr-14">
+          <div class="grid gap-y-6">
+            <button class="tabs-nav__btn active flex text-left font-[300]" type="button"
+              data-tab="#tab-1">
+              <span class="italic flex gap-x-2 after:content-['/'] mr-2 mini:mr-6">
+                1
+              </span>
+              <span>
+                Чистка золота в наших магазинах
+              </span>
+            </button>
+            <button class="tabs-nav__btn flex text-left font-[300]" type="button" data-tab="#tab-2">
+              <span class="italic flex gap-x-2 after:content-['/'] mr-2 mini:mr-6">
+                2
+              </span>
+              Обмен старых изделий на новые
+            </button>
+          </div>
         </div>
 
         <div class="tabs-content xl:col-span-8 mt-6 mini:mt-10 xl:m-0">
-          <div class="tabs-item active sm:grid-cols-12 justify-between gap-x-3 md:gap-x-6" id="tab-1">
+          <div class="tabs-item active sm:grid-cols-12 justify-between sm:space-x-3 md:space-x-6" id="tab-1">
             <div class="col-span-7">
               <h3 class="text-xl mini:text-2xl md:text-4xl mb-4 mini:mb-6">Чистка золота в наших магазинах </h3>
               <div class="text-base text-[#54514B] font-light">
@@ -697,12 +721,12 @@
             </div>
             <div class="col-span-5 mt-5 sm:m-0">
               <picture>
-                <img class="mx-auto xl:m-0 w-full sm:w-[340px] sm:h-[465px] rounded-default" src="img/model-1.png"
+                <img class="mx-auto xl:m-0 w-full sm:h-[465px] rounded-default" src="img/model-1.png"
                   alt="">
               </picture>
             </div>
           </div>
-          <div class="tabs-item grid sm:grid-cols-12 justify-between gap-x-3 md:gap-x-6" id="tab-2">
+          <div class="tabs-item grid sm:grid-cols-12 justify-between sm:space-x-3 md:space-x-6" id="tab-2">
             <div class="col-span-7">
               <h3 class="text-xl mini:text-2xl md:text-4xl mb-4 mini:mb-6">Обмен старых изделий на новые </h3>
               <div class="text-base text-[#54514B] font-light">
@@ -717,7 +741,7 @@
             </div>
             <div class="col-span-5 mt-5 sm:m-0">
               <picture>
-                <img class="mx-auto xl:m-0 w-full sm:w-[340px] sm:h-[465px] rounded-default" src="img/model-2.png"
+                <img class="mx-auto xl:m-0 w-full sm:h-[465px] rounded-default" src="img/model-2.png"
                   alt="">
               </picture>
             </div>
@@ -735,7 +759,7 @@
         Ювелирные украшения из золота и серебра
       </h2>
 
-      <div class="jewelry-wrap mt-8 sm:mt-14 grid grid-cols-12 gap-y-6 gap-x-4 md:gap-x-6 md:gap-x-12">
+      <div class="jewelry-wrap mt-8 sm:mt-14 grid grid-cols-12 gap-y-6 space-x-4 md:space-x-6 md:space-x-12">
         <div class="jewelry-img col-span-12 sm:col-span-5 md:col-span-6">
           <picture>
             <img class="w-full h-[270px] mini:h-[340px] sm:h-full rounded-default" src="img/f.jpg" alt="">
@@ -768,7 +792,7 @@
         </a>
       </div>
 
-      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-6 md:gap-x-14 flex-wrap lg:gap-x-[100px] lg:flex-nowrap">
+      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-8 mini:space-x-4 md:space-x-14 flex-wrap lg:space-x-[100px] lg:flex-nowrap">
         <div class="">
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">МИР FONON</h4>
           <ul class="grid gap-y-2 text-lg">
@@ -829,7 +853,7 @@
 
         <div>
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">Соц. сети</h4>
-          <ul class="flex gap-x-4 items-center">
+          <ul class="flex space-x-4 items-center">
 
             <li>
               <a href="" class="hover:scale-150 ease-in-out duration-150 block">
@@ -866,7 +890,7 @@
       <hr class="border border-[#979797]">
       <div class="text-center py-8">
         © 2021 Все права защищены. Сделано в
-        <a class="underline underline-offset-4 hover:text-beige-dark" href="digitalpanda.uz">
+        <a href="https://digitalpanda.uz" class="underline underline-offset-4 hover:text-beige-dark">
           Digital Panda
         </a>
         2021
@@ -876,7 +900,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644556885233'></script>
+<script src='js/main.js?t=1644750533099'></script>
 
 </body>
 
