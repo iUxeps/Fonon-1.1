@@ -10,22 +10,21 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644909646348" />
+  <link rel="stylesheet" href="css/main.css?t=1644912076849" />
 
   <script>
     tailwind.config = {
       theme: {
         screens: {
-          micro: "290px",
-          mini: "350px",
-          phone: '500px',
-          sm: "641px",
-          md: "776px",
-          pad: "850px",
-          lg: "1030px",
-          xl: "1290px",
-          // '2xl': '1440px',
-          laptop: '1600px'
+          'micro': "290px",
+          'mini': "350px",
+          'phone': '500px',
+          'sm': "641px",
+          'md': "776px",
+          'pad': "850px",
+          'lg': "1030px",
+          'xl': "1290px",
+          'laptop': '1600px'
         },
         borderRadius: {
           'none': '0',
@@ -205,25 +204,26 @@
 <main class="contact-page">
   <div class="title my-7"> Контакты </div>
   <section class="container mx-auto relative pad:h-[700px]">
-    <div class="pad:absolute z-50 pad:ml-14 pad:mt-[100px]">
+    <div class="lg:absolute z-50 lg:ml-14 lg:mt-[100px]">
       <div
-        class="py-5 sm:py-9 sm:px-11 flex justify-center sm:inline-block bg-[#ffffffba] rounded-lg md:border border-solid border-[#D8D8D8] phone:backdrop-blur-[11px]">
-        <form action="">
+        class="py-5 sm:py-9 px-5 phone:px-11 flex justify-center sm:inline-block bg-[#ffffffba] rounded-lg md:border border-solid border-[#D8D8D8] phone:backdrop-blur-[11px]">
+        <form class="w-full" action="">
           <div class="form-title text-xl sm:text-[30px] leading-[40px] text-center pad:text-left">
             Есть вопросы?
           </div>
+
           <div class="space-y-4 mt-4">
             <input
-              class="font-normal border-[1px] border-solid border-[#DADADA] rounded-[3px] w-full mini:w-[300px] lg:w-[374px] pl-2 mini:pl-4 py-3 focus:outline-none focus:ring focus:ring-violet-300 placeholder:text-4 placeholder:font-light"
+              class=" w-full sm:w-[374px] pl-2 mini:pl-4 focus:ring focus:ring-violet-300"
               type="text" id="name" name="Имя" placeholder="Имя"><br>
             <input
-              class="font-normal border-[1px] border-solid border-[#DADADA] rounded-[3px] w-full mini:w-[300px] lg:w-[374px] pl-2 mini:pl-4 py-3 focus:outline-none focus:ring focus:ring-violet-300 placeholder:text-4 placeholder:font-light"
+              class=" w-full sm:w-[374px] pl-2 mini:pl-4 focus:ring focus:ring-violet-300"
               type="email" id="email" name="Электронное письмо" placeholder="Электронное письмо"><br>
             <input
-              class="font-normal border-[1px] border-solid border-[#DADADA] rounded-[3px] w-full mini:w-[300px] lg:w-[374px] pl-2 mini:pl-4 py-3 focus:outline-none focus:ring focus:ring-violet-300 placeholder:text-4 placeholder:font-light"
+              class=" w-full sm:w-[374px] pl-2 mini:pl-4 focus:ring focus:ring-violet-300"
               type="tel" id="tel" name="Телефон номер" placeholder="Телефон номер"><br>
             <textarea
-              class="font-normal resize-none border-[1px] border-solid border-[#DADADA] rounded-[3px] w-full mini:w-[300px] lg:w-[374px] pl-2 mini:pl-4 py-3 focus:outline-none focus:ring focus:ring-violet-300 placeholder:text-4 placeholder:font-light"
+              class=" resize-none w-full sm:w-[374px] pl-2 mini:pl-4 focus:ring focus:ring-violet-300"
               name="Сообщение" id="message" rows="4" placeholder="Сообщение"></textarea>
           </div>
           <button class=" rounded-lg hover:bg-beige w-full mt-[14px] text-center mx-auto py-4 bg-[#333333] text-white"
@@ -396,7 +396,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644909646348'></script>
+<script src='js/main.js?t=1644912076849'></script>
 
 </body>
 
