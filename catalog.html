@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644902657250" />
+  <link rel="stylesheet" href="css/main.css?t=1644906561026" />
 
   <script>
     tailwind.config = {
@@ -104,7 +104,7 @@
         </a>
       </div>
 
-      <nav class="navbar lg:mt-8">
+      <nav class="navbar lg:mt-8 w-full phone:w-auto">
         <button class="burger-close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="36" height="36"
             viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
@@ -115,7 +115,7 @@
           </svg>
         </button>
 
-        <ul class="nav-list flex justify-center lg:space-x-[51px] font-normal text-lg mb-6">
+        <ul class="nav-list flex phone:justify-center lg:space-x-[51px] font-normal text-lg mb-6">
           <li class="nav-item nav-item-trig relative cursor-pointer">
             <div class="nav-link nav-link-drop cursor-pointer flex items-center after:ml-2">Ювелирные украшения</div>
             <div class="nav-drop bg-white absolute p-4 items-start w-full rounded-lg top-[40px]">
@@ -212,14 +212,14 @@
   <section class="catalog mt-11">
     <div class="container mx-auto">
       <div class="pad:flex justify-between  pad:space-x-8  xl:space-x-12">
-        <aside class="filter-side h-fit w-12/12 w-full z-50 pad:w-4/12 xl:w-3/12 bg-beige-light px-6 py-7 pad:rounded-lg relative">
+        <aside class="filter-side h-fit w-12/12 w-full z-50 pad:w-4/12 xl:w-3/12 bg-beige-light px-6 py-7 pad:rounded-lg relative overflow-scroll">
 
             <h3
               class="font-medium text-lg relative after:content-[''] after:border-t after:border-[#666666] after:block after:w-full after:mt-4">
               ФИЛЬТР
             </h3>
 
-            <button class="pad:hidden block filter-close absolute top-5 right-5">
+            <button class="pad:hidden block filter-close absolute top-5 right-5 z-50">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x hover:stroke-beige-dark" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -731,8 +731,8 @@
             </div>
           </div>
 
-          <div class="flex justify-center">
-            <div class="product-pagination mt-[100px] flex items-center space-x-2">
+          <div class="flex justify-center mt-[50px] sm:mt-[100px]">
+            <div class="product-pagination flex items-center micro:space-x-2">
               <a href="#" class="prev-btn not-page">
                 <picture>
                   <img src="img/arrow.png" alt="">
@@ -781,7 +781,7 @@
         </a>
       </div>
 
-      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-8 mini:space-x-4 md:space-x-14 flex-wrap lg:space-x-[100px] lg:flex-nowrap">
+      <div class="footer-links mt-10 md:m-0 flex justify-between md:justify-end gap-y-8 mini:gap-x-4 md:space-x-14 flex-wrap lg:gap-x-[100px] lg:flex-nowrap">
         <div class="">
           <h4 class="mb-3 lg:mb-8 text-xl font-bold">МИР FONON</h4>
           <ul class="grid gap-y-2 text-lg">
@@ -880,7 +880,7 @@
       <div class="text-center py-8">
         © 2021 Все права защищены. Сделано в
         <a href="https://digitalpanda.uz" class="underline underline-offset-4 hover:text-beige-dark">
-          Digital Panda
+          Digital&#160;Panda
         </a>
         2021
       </div>
@@ -889,7 +889,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644902657250'></script>
+<script src='js/main.js?t=1644906561026'></script>
 
 </body>
 
