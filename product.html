@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644830643110" />
+  <link rel="stylesheet" href="css/main.css?t=1644902657273" />
 
   <script>
     tailwind.config = {
@@ -56,9 +56,9 @@
   </div>
 </div>
 <header class="header mt-7">
-  <div class="container mx-auto">
-    <div class="flex justify-end sm:justify-between items-center">
-      <div class="hidden sm:flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
+  <div class="container mx-auto ">
+    <div class="hidden sm:flex justify-between items-center">
+      <div class="flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
         <div>
           <a href="contact.html" class="flex space-x-2 items-center">
             <picture>
@@ -76,7 +76,7 @@
           </a>
         </div>
       </div>
-      <div class="lang group ">
+      <div class="lang group">
         <button class="flex items-center  hover:text-beige-dark">
           <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-world mr-1" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -97,10 +97,10 @@
 
     </div>
 
-    <div class="w-full mt-10 sm:mt-8 flex justify-between lg:block">
+    <div class="w-full mt-8 flex justify-between lg:block">
       <div class="logo">
         <a href="#">
-          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[180px] sm:w-[250px] mx-auto" src="img/logo.png" alt="" /></picture>
+          <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[150px] mini:w-[180px] sm:w-[250px] mx-auto" src="img/logo.png" alt="" /></picture>
         </a>
       </div>
 
@@ -167,15 +167,36 @@
             </a>
           </div>
         </div>
+
+        <div class="lang group sm:hidden mt-5">
+          <button class="flex items-center  hover:text-beige-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-world mr-1" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" />
+              <line x1="3.6" y1="9" x2="20.4" y2="9" />
+              <line x1="3.6" y1="15" x2="20.4" y2="15" />
+              <path d="M11.5 3a17 17 0 0 0 0 18" />
+              <path d="M12.5 3a17 17 0 0 1 0 18" />
+            </svg>
+            <p class="text-xl font-medium ">
+              Ru
+            </p>
+          </button>
+          <button class="absolute group-hover:block hidden text-xl font-medium pt-1 sm:pt-2 pb-2 pl-8 hover:text-beige-dark">
+            Uz
+          </button>
+        </div>
+
       </nav>
 
-      <button class="burger-menu">
-        <svg width="32" height="21">
-          <line x1="16" y1="2" x2="30" y2="2"></line>
-          <line x1="2" y1="8" x2="30" y2="8"></line>
-          <line x1="16" y1="14" x2="2" y2="14"></line>
-        </svg>
-      </button>
+
+        <button class="burger-menu">
+          <svg width="32" height="21">
+            <line x1="16" y1="2" x2="30" y2="2"></line>
+            <line x1="2" y1="8" x2="30" y2="8"></line>
+            <line x1="16" y1="14" x2="2" y2="14"></line>
+          </svg>
+        </button>
     </div>
   </div>
   <div class="nav-bg fixed z-[99999] top-0 right-0 left-0 bottom-0 w-full h-full"></div>
@@ -190,7 +211,7 @@
 
           <div class="prod-left_slider flex items-start flex-wrap xl:flex-nowrap gap-y-5 gap-x-4 w-full ">
 
-            <div thumbsSlider="" class="swiper w-12/12 xl:w-2/12 " id="swiper-dots">
+            <!-- <div thumbsSlider="" class="swiper w-12/12 xl:w-2/12 " id="swiper-dots">
               <div class="swiper-wrapper">
                 <div class="swiper-slide h-[50px] mini:h-[70px] phone:h-[100px] w-[50px] mini:w-[70px] phone:w-[100px] cursor-pointer rounded-lg overflow-hidden	">
                   <picture><source srcset="img/r.webp" type="image/webp"><img class="h-[50px] mini:h-[70px] phone:h-[100px] w-[50px] mini:w-[70px] phone:w-[100px]" src="img/r.jpg" alt=""></picture>
@@ -208,19 +229,31 @@
             </div>
 
             <div class="swiper w-12/12 xl:w-10/12" id="swiper-main">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide ">
-                  <picture><source srcset="img/r.webp" type="image/webp"><img class="rounded-lg object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/r.jpg" alt=""></picture>
+              <div class="swiper-wrapper zoom-block ">
+                <div class="swiper-slide zoom">
+                  <picture><source srcset="img/r.webp" type="image/webp"><img class="rounded-lg zoom-image object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/r.jpg" alt=""></picture>
                 </div>
-                <div class="swiper-slide ">
-                  <picture><source srcset="img/ZIR0123.webp" type="image/webp"><img class="rounded-lg object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/ZIR0123.jpg" alt=""></picture>
+                <div class="swiper-slide zoom">
+                  <picture><source srcset="img/ZIR0123.webp" type="image/webp"><img class="rounded-lg zoom-image object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/ZIR0123.jpg" alt=""></picture>
                 </div>
-                <div class="swiper-slide ">
-                  <picture><source srcset="img/ZIR0209.webp" type="image/webp"><img class="rounded-lg object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/ZIR0209.jpg" alt=""></picture>
+                <div class="swiper-slide zoom">
+                  <picture><source srcset="img/ZIR0209.webp" type="image/webp"><img class="rounded-lg zoom-image object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/ZIR0209.jpg" alt=""></picture>
                 </div>
-                <div class="swiper-slide ">
-                  <picture><source srcset="img/ZIR0588.webp" type="image/webp"><img class="rounded-lg object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/ZIR0588.jpg" alt=""></picture>
+                <div class="swiper-slide zoom">
+                  <picture><source srcset="img/ZIR0588.webp" type="image/webp"><img class="rounded-lg zoom-image object-cover w-auto mx-auto pad:w-full h-[250px] mini:h-[400px] xl:h-[420px]" src="img/ZIR0588.jpg" alt=""></picture>
                 </div>
+              </div>
+            </div> -->
+
+            <div class="vanilla-zoom sm:flex w-full gap-x-2 lg:gap-x-5">
+              <div class="sidebar flex gap-x-2 mini:gap-x-4 justify-center mb-4 sm:m-0 sm:flex-col sm:gap-y-3 sm:w-12/12 xl:w-2/12 ">
+                <picture><source srcset="img/r.webp" type="image/webp"><img src="img/r.jpg" class="small-preview rounded-lg h-[60px] mini:h-[70px] phone:h-[100px] w-[60px] mini:w-[70px] phone:w-[100px]"></picture>
+                <picture><source srcset="img/ZIR0123.webp" type="image/webp"><img src="img/ZIR0123.jpg" class="small-preview rounded-lg h-[60px] mini:h-[70px] phone:h-[100px] w-[60px] mini:w-[70px] phone:w-[100px] md:w-[130px] md:h-[130px] pad:w-[110px] pad:h-[110px]"></picture>
+                <picture><source srcset="img/ZIR0209.webp" type="image/webp"><img src="img/ZIR0209.jpg" class="small-preview rounded-lg h-[60px] mini:h-[70px] phone:h-[100px] w-[60px] mini:w-[70px] phone:w-[100px] md:w-[130px] md:h-[130px] pad:w-[110px] pad:h-[110px]"></picture>
+                <picture><source srcset="img/ZIR0588.webp" type="image/webp"><img src="img/ZIR0588.jpg" class="small-preview rounded-lg h-[60px] mini:h-[70px] phone:h-[100px] w-[60px] mini:w-[70px] phone:w-[100px] md:w-[130px] md:h-[130px] pad:w-[110px] pad:h-[110px]"></picture>
+              </div>
+              <div class="zoomed-image rounded-lg h-[300px] mini:h-[400px] phone:h-[500px] sm:h-auto sm:w-12/12 xl:w-10/12 ">
+
               </div>
             </div>
 
@@ -428,7 +461,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -441,7 +474,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -454,7 +487,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -467,7 +500,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -480,7 +513,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -494,7 +527,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -508,7 +541,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -656,7 +689,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -669,7 +702,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -682,7 +715,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -695,7 +728,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -708,7 +741,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -721,7 +754,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -734,7 +767,7 @@
                 <h4 class="swiper-title text-[20px] leading-[18px] mt-4 mb-2 font-semibold">
                   Колье с бриллиантами из белого золота
                 </h4>
-                <p class="swiper-text text-[18px] font-light">
+                <p class="swiper-text text-base font-light">
                   Золото Au 585, Без вставок, 2.38 г
                 </p>
               </div>
@@ -867,7 +900,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1644830643110'></script>
+<script src='js/main.js?t=1644902657273'></script>
 
 </body>
 
