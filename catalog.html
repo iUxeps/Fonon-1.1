@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1645165237020" />
+  <link rel="stylesheet" href="css/main.css?t=1646051571264" />
 
   <script>
     tailwind.config = {
@@ -18,6 +18,7 @@
         screens: {
           'micro': "290px",
           'mini': "350px",
+          'small': '400px',
           'phone': '500px',
           'sm': "641px",
           'md': "776px",
@@ -28,6 +29,7 @@
         },
         borderRadius: {
           'none': '0',
+          'sm': '4px',
           'lg': '8px',
           'xl': '16px',
           'default': '20px',
@@ -53,8 +55,10 @@
 </div>
 <header class="header mt-7">
   <div class="container mx-auto ">
-    <div class="hidden sm:flex justify-between items-center">
-      <div class="flex sm:ustify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
+    <div class="flex justify-between items-center">
+
+      <div
+        class="hidden sm:flex sm:justify-between sm:flex-wrap gap-y-4 sm:justify-start space-x-4 sm:space-x-9 text-lg">
         <div>
           <a href="contact.html" class="flex space-x-2 items-center">
             <picture>
@@ -72,28 +76,51 @@
           </a>
         </div>
       </div>
-      <div class="lang group">
-        <button class="flex items-center  hover:text-beige-dark">
-          <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-world mr-1" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="12" r="9" />
-            <line x1="3.6" y1="9" x2="20.4" y2="9" />
-            <line x1="3.6" y1="15" x2="20.4" y2="15" />
-            <path d="M11.5 3a17 17 0 0 0 0 18" />
-            <path d="M12.5 3a17 17 0 0 1 0 18" />
-          </svg>
-          <p class="text-xl font-medium ">
-            Ru
-          </p>
-        </button>
-        <button class="absolute group-hover:block hidden text-xl font-medium pt-1 sm:pt-2 pb-2 pl-8 hover:text-beige-dark">
-          Uz
-        </button>
+
+      <div class="flex items-center gap-x-10">
+        <div class="">
+          <form action="">
+            <div class="flex items-center relative search-wrap">
+              <input type="text" class="search-input pl-2 py-1 rounded-lg " placeholder="Поиск">
+              <div class="search-btn absolute right-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search cursor-pointer"
+                  width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="10" cy="10" r="7" />
+                  <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="hidden sm:block lang group">
+          <button class="flex items-center  hover:text-beige-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-world mr-1" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <line x1="3.6" y1="9" x2="20.4" y2="9" />
+              <line x1="3.6" y1="15" x2="20.4" y2="15" />
+              <path d="M11.5 3a17 17 0 0 0 0 18" />
+              <path d="M12.5 3a17 17 0 0 1 0 18" />
+            </svg>
+            <p class="text-xl font-medium ">
+              Ru
+            </p>
+          </button>
+          <button
+            class="absolute group-hover:block hidden text-xl font-medium pt-1 sm:pt-2 pb-2 pl-8 hover:text-beige-dark">
+            Uz
+          </button>
+        </div>
       </div>
 
     </div>
 
-    <div class="w-full mt-8 flex justify-between lg:block">
+    <div class="w-full sm:mt-8 flex justify-between lg:block">
       <div class="logo">
         <a href="#">
           <picture><source srcset="img/logo.webp" type="image/webp"><img class="w-[150px] mini:w-[180px] sm:w-[250px] mx-auto" src="img/logo.png" alt="" /></picture>
@@ -166,8 +193,10 @@
 
         <div class="lang group sm:hidden mt-5">
           <button class="flex items-center  hover:text-beige-dark">
-            <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-world mr-1" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-world mr-1" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <circle cx="12" cy="12" r="9" />
               <line x1="3.6" y1="9" x2="20.4" y2="9" />
               <line x1="3.6" y1="15" x2="20.4" y2="15" />
@@ -178,7 +207,8 @@
               Ru
             </p>
           </button>
-          <button class="absolute group-hover:block hidden text-xl font-medium pt-1 sm:pt-2 pb-2 pl-8 hover:text-beige-dark">
+          <button
+            class="absolute group-hover:block hidden text-xl font-medium pt-1 sm:pt-2 pb-2 pl-8 hover:text-beige-dark">
             Uz
           </button>
         </div>
@@ -186,13 +216,13 @@
       </nav>
 
 
-        <button class="burger-menu">
-          <svg width="32" height="21">
-            <line x1="16" y1="2" x2="30" y2="2"></line>
-            <line x1="2" y1="8" x2="30" y2="8"></line>
-            <line x1="16" y1="14" x2="2" y2="14"></line>
-          </svg>
-        </button>
+      <button class="burger-menu">
+        <svg width="32" height="21">
+          <line x1="16" y1="2" x2="30" y2="2"></line>
+          <line x1="2" y1="8" x2="30" y2="8"></line>
+          <line x1="16" y1="14" x2="2" y2="14"></line>
+        </svg>
+      </button>
     </div>
   </div>
   <div class="nav-bg fixed z-[99999] top-0 right-0 left-0 bottom-0 w-full h-full"></div>
@@ -885,7 +915,7 @@
 </footer>
 
 <script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
-<script src='js/main.js?t=1645165237020'></script>
+<script src='js/main.js?t=1646051571264'></script>
 
 </body>
 
